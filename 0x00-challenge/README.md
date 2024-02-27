@@ -10,7 +10,7 @@
 
 - Task 2: Sort
 
-    -There are two major issues with this task
+    - There are two major issues with this task
         - Logic
           - The `result` array, you should use result.insert(i, i_arg) instead of result.insert(i - 1, i_arg)
 
