@@ -11,10 +11,10 @@
 - Task 2: Sort
 
     -There are two major issues with this task
-        1. Logic
+        ** Logic
           - The `result` array, you should use result.insert(i, i_arg) instead of result.insert(i - 1, i_arg)
 
-        2. The use of `if !is_inserted` is unnecessary. This will render the loop to false. Therefore, the correct version is `result << i_arg unless is_inserted`
+        ** The use of `if !is_inserted` is unnecessary. This will render the loop to false. Therefore, the correct version is `result << i_arg unless is_inserted`
 
 - Task 3: User password
 
