@@ -18,7 +18,6 @@
 
 - Task 3: User password
 
-    - Two potentials issues spotted at line 43 & 57. At line 43, use of a single underscore would mean a private attribute for password. This would otherwise prevent reuse of stored values of password in this `is_valid_password` function
-- At line 57, this was provided ==> "return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password".
-- Here the method currently compares `hexdigest().upper()` which should be `hexdigest().lower()`.
+    - Two potentials issues spotted in line 43 & 57. Line 43 used a single underscore which meant a private attribute for password. The `is_valid_password` function was inaccessible to other functions
+- The given code in line 57 was ==> "return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password".which was comparing `hexdigest().upper()`. I corrected it to `hexdigest().lower()`
  
