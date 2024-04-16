@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" An implementation of a perfect square """
+""" Perfect square implementation"""
 
 
 class Square():
-    """Class square function"""
+    """ Square class representaion """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ Initialize single and keyword arguments """
+        """ Instantiation of class """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -16,8 +16,8 @@ class Square():
         """ Area of the square """
         return self.width * self.height
 
-    def perimeter_of_my_square(self):
-        """ Perimeter of the square """
+    def permiter_of_my_square(self):
+        """ Square perimeter """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
@@ -26,8 +26,8 @@ class Square():
 
 
 if __name__ == "__main__":
-    """ Execute the function when name is invoked """
+
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_my_square())
+    print(s.permiter_of_my_square())
