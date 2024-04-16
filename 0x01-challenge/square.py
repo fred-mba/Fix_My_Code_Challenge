@@ -4,7 +4,6 @@
 
 class Square():
     """ Class square function """
-
     width = 0
     height = 0
 
